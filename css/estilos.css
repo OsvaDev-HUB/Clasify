@@ -1,0 +1,240 @@
+/* Estilos generales de Clasify */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #222222;
+    background-color: #f4f4f4;
+}
+
+/* Barra de arriba */
+.barra {
+    background-color: #b00000;
+    color: white;
+    padding: 12px 20px;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.usuario-conectado {
+    float: right;
+    margin-top: 4px;
+}
+
+/* Menú */
+.menu {
+    background-color: #333333;
+    padding: 0 12px;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.menu a:hover {
+    background-color: #555555;
+}
+
+/* Contenido de cada página */
+.contenido {
+    background-color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    border: 1px solid #dddddd;
+}
+
+h1 {
+    font-size: 24px;
+    color: #b00000;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 28px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 4px;
+}
+
+/* Mensajes de éxito y de error */
+.mensaje {
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.exito {
+    background-color: #e3f4e3;
+    border: 1px solid #8cc68c;
+}
+
+.error {
+    background-color: #fbe3e3;
+    border: 1px solid #e09a9a;
+}
+
+/* Tablas */
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #f2dcdb;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 7px 9px;
+}
+
+tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+.centro {
+    text-align: center;
+}
+
+.reprobada {
+    color: #c00000;
+    font-weight: bold;
+}
+
+.gris {
+    color: #777777;
+}
+
+/* Formularios */
+form.formulario label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=number], select, textarea {
+    padding: 7px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    font-size: 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+form.formulario input[type=text], form.formulario input[type=password], form.formulario input[type=email],
+form.formulario select {
+    width: 350px;
+}
+
+input.nota {
+    width: 70px;
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #b00000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.boton:hover {
+    background-color: #8a0000;
+}
+
+.boton-gris {
+    background-color: #666666;
+}
+
+.boton-chico {
+    padding: 4px 10px;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.filtros {
+    background-color: #f7f7f7;
+    border: 1px solid #e2e2e2;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+}
+
+.ayuda {
+    color: #666666;
+    font-size: 13px;
+}
+
+/* Login */
+.caja-login {
+    background-color: white;
+    width: 340px;
+    max-width: 90%;
+    margin: 70px auto;
+    padding: 25px 30px;
+    border: 1px solid #dddddd;
+    border-top: 6px solid #b00000;
+}
+
+.caja-login h1 {
+    text-align: center;
+}
+
+.caja-login input[type=text], .caja-login input[type=password] {
+    width: 100%;
+}
+
+.caja-login .boton {
+    width: 100%;
+}
+
+.pie {
+    text-align: center;
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* En el celular el menú y el nombre se ordenan uno bajo otro */
+@media (max-width: 600px) {
+    .usuario-conectado {
+        float: none;
+        display: block;
+        font-size: 13px;
+    }
+
+    .menu a {
+        padding: 8px 6px;
+        font-size: 14px;
+    }
+
+    .contenido {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    form.formulario input[type=text], form.formulario input[type=password], form.formulario input[type=email],
+    form.formulario select {
+        width: 100%;
+    }
+}
